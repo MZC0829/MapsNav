@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    /// 目的地坐标，113.946791,22.553355
+    let toLocation = CLLocationCoordinate2D(latitude: 22.553355, longitude: 113.946791)
 
-    override func viewDidLoad() {
+    @IBAction func navButtonTap(_ sender: UIButton)
+    {
+        mapsNav(toPoint: toLocation, toPointName: "good place")
+    }
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
