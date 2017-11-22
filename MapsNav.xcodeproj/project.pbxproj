@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2547B01FC568CB006C6BC0 /* MapsNavFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2547AE1FC568CB006C6BC0 /* MapsNavFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2547B31FC568CB006C6BC0 /* MapsNav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2547AC1FC568CB006C6BC0 /* MapsNav.framework */; };
+		BF2547B41FC568CB006C6BC0 /* MapsNav.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF2547AC1FC568CB006C6BC0 /* MapsNav.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF2547B91FC568DF006C6BC0 /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC911FC3EBFF0057BAC2 /* Nav.swift */; };
+		BF2547BA1FC568DF006C6BC0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC931FC3EC190057BAC2 /* Extension.swift */; };
 		BF51AC801FC3EA860057BAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC7F1FC3EA860057BAC2 /* AppDelegate.swift */; };
 		BF51AC821FC3EA860057BAC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC811FC3EA860057BAC2 /* ViewController.swift */; };
 		BF51AC851FC3EA860057BAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF51AC831FC3EA860057BAC2 /* Main.storyboard */; };
@@ -16,7 +21,34 @@
 		BF51AC941FC3EC190057BAC2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC931FC3EC190057BAC2 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BF2547B11FC568CB006C6BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF51AC741FC3EA860057BAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2547AB1FC568CB006C6BC0;
+			remoteInfo = MapsNavFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF2547B81FC568CB006C6BC0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF2547B41FC568CB006C6BC0 /* MapsNav.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BF2547AC1FC568CB006C6BC0 /* MapsNav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapsNav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2547AE1FC568CB006C6BC0 /* MapsNavFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsNavFramework.h; sourceTree = "<group>"; };
+		BF2547AF1FC568CB006C6BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF51AC7C1FC3EA860057BAC2 /* MapsNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF51AC7F1FC3EA860057BAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF51AC811FC3EA860057BAC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,20 +61,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF51AC791FC3EA860057BAC2 /* Frameworks */ = {
+		BF2547A81FC568CB006C6BC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF51AC791FC3EA860057BAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547B31FC568CB006C6BC0 /* MapsNav.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF2547AD1FC568CB006C6BC0 /* MapsNavFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BF2547AE1FC568CB006C6BC0 /* MapsNavFramework.h */,
+				BF2547AF1FC568CB006C6BC0 /* Info.plist */,
+			);
+			path = MapsNavFramework;
+			sourceTree = "<group>";
+		};
 		BF51AC731FC3EA860057BAC2 = {
 			isa = PBXGroup;
 			children = (
 				BF51AC7E1FC3EA860057BAC2 /* MapsNav */,
+				BF2547AD1FC568CB006C6BC0 /* MapsNavFramework */,
 				BF51AC7D1FC3EA860057BAC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BF51AC7C1FC3EA860057BAC2 /* MapsNav.app */,
+				BF2547AC1FC568CB006C6BC0 /* MapsNav.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,7 +123,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BF2547A91FC568CB006C6BC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547B01FC568CB006C6BC0 /* MapsNavFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		BF2547AB1FC568CB006C6BC0 /* MapsNavFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2547B71FC568CB006C6BC0 /* Build configuration list for PBXNativeTarget "MapsNavFramework" */;
+			buildPhases = (
+				BF2547A71FC568CB006C6BC0 /* Sources */,
+				BF2547A81FC568CB006C6BC0 /* Frameworks */,
+				BF2547A91FC568CB006C6BC0 /* Headers */,
+				BF2547AA1FC568CB006C6BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapsNavFramework;
+			productName = MapsNavFramework;
+			productReference = BF2547AC1FC568CB006C6BC0 /* MapsNav.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BF51AC7B1FC3EA860057BAC2 /* MapsNav */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF51AC8E1FC3EA860057BAC2 /* Build configuration list for PBXNativeTarget "MapsNav" */;
@@ -80,10 +160,12 @@
 				BF51AC781FC3EA860057BAC2 /* Sources */,
 				BF51AC791FC3EA860057BAC2 /* Frameworks */,
 				BF51AC7A1FC3EA860057BAC2 /* Resources */,
+				BF2547B81FC568CB006C6BC0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BF2547B21FC568CB006C6BC0 /* PBXTargetDependency */,
 			);
 			name = MapsNav;
 			productName = MapsNav;
@@ -100,6 +182,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = MZC;
 				TargetAttributes = {
+					BF2547AB1FC568CB006C6BC0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					BF51AC7B1FC3EA860057BAC2 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -120,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				BF51AC7B1FC3EA860057BAC2 /* MapsNav */,
+				BF2547AB1FC568CB006C6BC0 /* MapsNavFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF2547AA1FC568CB006C6BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF51AC7A1FC3EA860057BAC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +232,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF2547A71FC568CB006C6BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2547B91FC568DF006C6BC0 /* Nav.swift in Sources */,
+				BF2547BA1FC568DF006C6BC0 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF51AC781FC3EA860057BAC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +253,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF2547B21FC568CB006C6BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2547AB1FC568CB006C6BC0 /* MapsNavFramework */;
+			targetProxy = BF2547B11FC568CB006C6BC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF51AC831FC3EA860057BAC2 /* Main.storyboard */ = {
@@ -171,6 +282,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF2547B51FC568CB006C6BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5RF3WWGD36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MapsNavFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsd.MapsNavFramework;
+				PRODUCT_NAME = MapsNav;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF2547B61FC568CB006C6BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5RF3WWGD36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MapsNavFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snsd.MapsNavFramework;
+				PRODUCT_NAME = MapsNav;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BF51AC8C1FC3EA860057BAC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +440,7 @@
 		BF51AC8F1FC3EA860057BAC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RF3WWGD36;
@@ -297,6 +457,7 @@
 		BF51AC901FC3EA860057BAC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RF3WWGD36;
@@ -313,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BF2547B71FC568CB006C6BC0 /* Build configuration list for PBXNativeTarget "MapsNavFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2547B51FC568CB006C6BC0 /* Debug */,
+				BF2547B61FC568CB006C6BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BF51AC771FC3EA860057BAC2 /* Build configuration list for PBXProject "MapsNav" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

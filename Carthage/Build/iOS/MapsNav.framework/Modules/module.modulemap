@@ -1,0 +1,4 @@
+framework module MapsNav {
+    header "MapsNav-Swift.h"
+    requires objc
+}
